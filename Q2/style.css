@@ -1,0 +1,205 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    padding: 1rem 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Marquee Styling */
+.marquee {
+    background-color: #fceb55; 
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.marquee marquee {
+    font-family: 'Arial', sans-serif; 
+    color: #ff5722; 
+}
+
+
+/* Main Content */
+.content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.content section {
+    margin-bottom: 2rem;
+}
+
+.content h2 {
+    color: #ff6f61;
+    margin-bottom: 1rem;
+}
+/* Common Banner Styles */
+.banner, .books-banner,.banner-toys {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner::after, .books-banner::after, .banner-toys::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay for readability */
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.banner-content p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+.banner-content a {
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+    color: white;
+}
+
+.shop-now-btn {
+    background-color: #ff6f61;
+}
+
+.shop-now-btn:hover {
+    background-color: #e55a4d;
+}
+
+.explore-btn {
+    background-color: #6c63ff;
+}
+
+.explore-btn:hover {
+    background-color: #554ccd;
+}
+
+/* Specific Banner Backgrounds */
+.banner {
+    background-image: url('https://t3.ftcdn.net/jpg/06/45/10/18/240_F_645101829_G6DrvB76ea3HoxOvWmhKUDJvSxe66Ay9.jpg');
+}
+
+.books-banner {
+    background-image: url('https://cdn.pixabay.com/photo/2021/01/21/15/54/books-5937716_1280.jpg');
+}
+.banner-toys{
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230702/pngtree-vibrant-wooden-educational-toys-for-toddlers-on-a-blue-banner-background-image_3737384.jpg');
+}
+
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.product-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.product-card button {
+    padding: 0.5rem 1rem;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #e55a4d;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
